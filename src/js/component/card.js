@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const Card = (props) => {
     return (
-        <div className="card my-3 justify-content-center">
+        <div className="card my-3 mx-4 justify-content-center">
             <img src={props.imgSrc} className="card-img-top" alt={props.imgAlt} />
             <div className="card-body">
                 <h5 className="card-title">{props.title}</h5>
