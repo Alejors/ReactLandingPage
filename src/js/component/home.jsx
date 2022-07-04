@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./navbar";
 import Jumbotron from "./jumbotron";
 import CardGroup from "./cardgroup";
+import Footer from "./footer";
 
 //create your first component
 const Home = () => {
@@ -16,10 +17,11 @@ const Home = () => {
 	return (
 		<>
 			<Navbar title={"React Landing Page!"} firstitem={"Home"} seconditem={"About"} thirditem={"Services"} fourthitem={"Contact"} textcolor="white" bgcolor="black" />
-			<div className="container-fluid">
+			<div className="container-fluid p-4">
 				<Jumbotron title={"A Warm Welcome!"} content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate felis porttitor dui euismod elementum. Nullam dictum viverra sapien, sit."} buttonUrl={"https://www.google.cl/maps/place/Instituto+Psiqui%C3%A1trico+Dr.+Jos%C3%A9+Horwitz+Barak/@-33.4163922,-70.6642558,14.54z/data=!4m9!1m2!2m1!1smanicomio!3m5!1s0x9662c5c08954db31:0x576bce46669baaef!8m2!3d-33.4228217!4d-70.6508485!15sCgltYW5pY29taW9aCyIJbWFuaWNvbWlvkgEUcHN5Y2hpYXRyaWNfaG9zcGl0YWw"} buttonContent={"Not sure why you are here?"} />
 				<CardGroup cards={cards} />
 			</div>
+			<Footer content={"Copyright © My Website 2022"} />
 		</>
 	);
 };

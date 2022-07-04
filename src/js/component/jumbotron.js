@@ -3,10 +3,10 @@ import PropTypes from "prop-types";
 
 const Jumbotron = (props) => {
 	return (
-		<div className="jumbotron m-4 py-5 px-4 bg-secondary bg-opacity-25 rounded">
+		<div className="jumbotron mb-4 py-5 px-4 bg-secondary bg-opacity-25 rounded">
 			<h1 className="display-4">{props.title}</h1>
 			<p className="lead">{props.content}</p>
-			<a href={props.buttonUrl} target="_blank" className="btn btn-primary text-light btn-lg">
+			<a href={props.buttonUrl} target="_blank" className="btn btn-secondary text-light btn-lg">
 				{props.buttonContent}
 			</a>
 		</div>
