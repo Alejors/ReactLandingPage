@@ -18,4 +18,12 @@ const Card = (props) => {
     );
 }
 
+Card.propTypes = {
+    imgSrc: PropTypes.string,
+    imgAlt: PropTypes.string,
+    title: PropTypes.string,
+    content: PropTypes.string,
+    buttonUrl: PropTypes.string
+}
+
 export default Card;
